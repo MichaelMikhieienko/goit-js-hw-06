@@ -1,139 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Effective Solutions for Your Business</title>
-  </head>
-  <body>
-    <!--Header section-->
-    <header>
-      <nav>
-        <a href="#">WebStudia</a>
-        <ul>
-          <li><a href="#">Studio</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+  <!--exercise 1-->
+    <ul id="categories">
+        <li class="item">
+          <h2>Animals</h2>
+          <ul>
+            <li>Cat</li>
+            <li>Hamster</li>
+            <li>Horse</li>
+            <li>Parrot</li>
+          </ul>
         </li>
-        <li>
-          <a href="tel:+11(000)111-11-11">+11(000)111-11-11</a>
+        <li class="item">
+          <h2>Products</h2>
+          <ul>
+            <li>Bread</li>
+            <li>Prasley</li>
+            <li>Cheese</li>
+          </ul>
+        </li>
+        <li class="item">
+          <h2>Technologies</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+          </ul>
         </li>
       </ul>
-    </header>
-    <main>
-      <!--Hero image-->
-      <section>
-        <h1>Effective Solutions for Your Business</h1>
-        <button type="button">Order Service</button>
-      </section>
-      <!--Section 1-->
-      <section>
-        <div hidden></div>
-        <!--Feature 1-->
-        <ul>
-          <li>
-            <h3>Strategy</h3>
-            <p>
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <!--Feature 2-->
-          <li>
-            <h3>Punctuality</h3>
-            <p>
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <!--Feature 3-->
-          <li>
-            <h3>Diligence</h3>
-            <p>
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <!--Feature 4-->
-          <li>
-            <h3>Technologies</h3>
-            <p>
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!--Section 2-->
-      <section>
-        <h2>What are we doing</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/Section2/img1/rectangle71.jpg"
-              alt="gallery"
-              width="360"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/Section2/img2/rectangle71.jpg"
-              alt="gallery"
-              width="360"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/Section2/img3/rectangle71.jpg"
-              alt="gallery"
-              width="360"
-              height="360"
-            />
-          </li>
-        </ul>
-      </section>
-      <!--Section 3-->
-      <section>
-        <h2>Our Team</h2>
-        <ul>
-          <li>
-            <img src="./images/Section3/teamcard1/img.jpg" alt="foto" />
-            <h3>Mark Guerrero</h3>
-            <p>Product Designer</p>
-          </li>
-          <li>
-            <img src="./images/Section3/teamcard2/img.jpg" alt="foto" />
-            <h3>Tom Ford</h3>
-            <p>Frontend Developer</p>
-          </li>
-          <li>
-            <img src="./images/Section3/teamcard3/img.jpg" alt="foto" />
-            <h3>Camila Garcia</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img src="./images/Section3/teamcard4/img.jpg" alt="foto" />
-            <h3>Daniel Wilson</h3>
-            <p>UI Designer</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <!--Footer section-->
-    <footer>
-      <a href="#">WebStudia</a>
-      <p>
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
-    </footer>
-  </body>
+
+<!--exercise 2-->      
+      <ul id="ingredients"></ul>
+
+      <!--exercise 3--> 
+      <ul class="gallery"></ul>
+
+      <!--exercise 4--> 
+      <div id="counter">
+        <button type="button" data-action="decrement">-1</button>
+        <span id="value">0</span>
+        <button type="button" data-action="increment">+1</button>
+      </div>
+
+<!--exercise 5-->
+      <input type="text" id="name-input" placeholder="Please enter your name" />
+<h1>Hello, <span id="name-output">Anonymous</span>!</h1>
+
+ <!--exercise 6-->
+<input
+  type="text"
+  id="validation-input"
+  data-length="6"
+  placeholder="Please enter 6 symbols"
+/>
+
+<!--exercise 7-->
+<input id="font-size-control" type="range" min="16" max="96" />
+<br />
+<span id="text">Abracadabra!</span>
+
+<!--exercise 8-->
+<form class="login-form">
+    <label>
+      Email
+      <input type="email" name="email" />
+    </label>
+    <label>
+      Password
+      <input type="password" name="password" />
+    </label>
+    <button type="submit">Login</button>
+  </form>
+
+<!--exercise 9-->
+  <div class="widget">
+    <p>Background color: <span class="color">-</span></p>
+    <button type="button" class="change-color">Change color</button>
+  </div>
+
+<!--exercise 10-->  
+  <div id="controls">
+    <input type="number" min="1" max="100" step="1" />
+    <button type="button" data-create>Create</button>
+    <button type="button" data-destroy>Destroy</button>
+  </div>
+  
+  <div id="boxes"></div>
+      <script src="index.js"></script>
+      dsfsdfsdfsd
+</body>
 </html>
